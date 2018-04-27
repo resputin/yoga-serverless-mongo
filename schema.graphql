@@ -1,0 +1,26 @@
+type User {
+  _id: ID!
+  email: String!
+  todos: [Todo!]!
+}
+
+type Todo {
+  _id: ID!
+  content: String!
+}
+
+type AuthPayload {
+  token: String!
+  user: User
+}
+
+type Query {
+  todos: [Todo!]!
+  todo(_id: ID!): Todo!
+}
+
+type Mutation {
+  signup(email: String!, password: String!): AuthPayload
+  login(email: String!, password: String!): AuthPayload
+  createTodo(content: String!): Todo!
+}

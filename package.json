@@ -1,0 +1,26 @@
+{
+  "name": "yoga-lambda",
+  "version": "1.0.0",
+  "description": "Tutorial for setting up yoga, mongo, and serverless",
+  "main": "handler.js",
+  "scripts": {
+    "start": "serverless offline --useSeparateProcesses",
+    "deploy": "serverless deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dylan <nielsen.dylan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "co": "^4.6.0",
+    "dotenv": "^5.0.1",
+    "graphql-yoga": "*",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.16"
+  },
+  "devDependencies": {
+    "serverless": "1.25.0",
+    "serverless-offline": "^3.20.3"
+  }
+}
